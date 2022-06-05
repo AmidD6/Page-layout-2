@@ -1,0 +1,14 @@
+.nav
+    .container__page
+        .nav__logo
+            h1.nav__logo--text agency
+        .nav__menu
+            - var items = ['Home', 'About Us', 'Our Services', 'Support']
+            - var dataItems = ['header', 'about', 'services', 'support']
+            each item, key in items
+                if item === 'Home'
+                    a.nav__menu__link.nav__menu__link--active(href="#" data-link=dataItems[key])= item
+                else
+                    a.nav__menu__link(href="#" data-link=dataItems[key])= item
+        .nav__button
+            button.nav__button--click Contact
