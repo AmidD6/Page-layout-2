@@ -1,0 +1,21 @@
+.footer__container
+    .footer__skew
+        .footer__page
+            .footer__page__menu
+                .footer__page__menu--logo
+                    h1.footer__page__menu--logo--text agency
+                .footer__page__menu__links
+                    - var items = ['Home', 'About Us', 'Our Services', 'Support']
+                    - var dataItems = ['header', 'about', 'services', 'support']
+                    each item, key in items
+                        if item === 'Home'
+                            a.footer__page__menu__links__link.footer__page__menu__links__link--active(href="#" data-link=dataItems[key])= item
+                        else
+                            a.footer__page__menu__links__link(href="#" data-link=dataItems[key])= item
+                .footer__page__menu--icons
+                    i.footer__page__menu--icons--icon.fa-brands.fa-facebook-f
+                    i.footer__page__menu--icons--icon.fa-brands.fa-youtube
+                    i.footer__page__menu--icons--icon.fa-brands.fa-twitter
+                    i.footer__page__menu--icons--icon.fa-brands.fa-linkedin-in
+            .footer__page__end
+                h6.footer__page__end--text Copyright &#169 Chirag Bactop 2022

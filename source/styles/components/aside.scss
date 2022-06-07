@@ -1,6 +1,7 @@
 .aside__skew {
     display: block;
     position: relative;
+    box-sizing: border-box;
     background: linear-gradient(#f4f4f9 50%, #6321db 50%);
     width: 100%;
     margin: 0;
@@ -58,6 +59,7 @@
                 &__titleText {
                     font-size: 33px;
                     width: 80%;
+                    color: #25234d;
                     line-height: 65px;
                     margin-top: 23px;
                     margin-left: -10px;
@@ -124,6 +126,27 @@
                     
                     &:nth-child(2n+4) {
                         margin-top: -130px;
+                    }
+
+                    &__img {
+                        margin-left: 28px;
+                        margin-top: 35px;
+                    }
+                    &__title {
+                        margin-left: 32px;
+                        margin-top: 26px;
+                        font-size: 23px;
+                        // opacity: .7;
+                        color: #535273;
+                    }
+                    &__text{
+                        width: 85%;
+                        margin-left: 35px;
+                        margin-top: 19px;
+                        font-size: 19px;
+                        line-height: 30px;
+                        color: #4e4c6f;
+                        letter-spacing: .1px;
                     }
                 }
             }

@@ -1,0 +1,105 @@
+.footer__container {
+    width: 100%;
+    min-height: 396px;
+    // background: linear-gradient(21deg, #6a3ee8 30%, #766bfe);
+    overflow: hidden;
+}
+
+.footer__skew{
+    width: 100%;
+    min-height: 396px;
+    background: linear-gradient(21deg, #6a3ee8, #7568fc);
+    border-top-left-radius: 250px;
+    overflow: hidden;
+    transform-origin: right;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -o-transform: skewY(-3deg);
+}
+
+.footer__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 396px;
+    transform-origin: left;
+    transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+    -moz-transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -o-transform: skewY(3deg);
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        padding-top: 115px;
+        box-sizing: border-box;
+        justify-content:space-between;
+        min-width: 1450px;
+        // padding-left: 80px;
+        &--logo {
+            position: relative;
+            bottom: 11px;
+            // left: 9px;
+            color: #fff;
+            font-size: 22px;
+        }
+
+        &__links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 400px;
+            // padding-left: 180px;
+            margin-left: 40px;
+            padding-bottom: 16px;
+            &__link {
+                color: #fff;
+                font-size: 19px;
+                text-decoration: none;
+                letter-spacing: 1px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+                margin-left: 78px;
+            }
+        }
+
+        &--icons {
+            display: flex;
+            flex-direction: row;
+            &--icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 9px;
+                margin-top: -10px;
+                width: 41px;
+                height: 41px;
+                background: #6e7efd;
+                color: #fff;
+                border-radius: 20.5px;
+                -webkit-border-radius: 20.5px;
+                -moz-border-radius: 20.5px;
+                -ms-border-radius: 20.5px;
+                -o-border-radius: 20.5px;
+
+            }
+        }
+    }
+    &__end{
+        margin-top: 70px;
+        &--text {
+            margin-top: -7px;
+            margin-left: 20px;
+            color: #fff;
+            letter-spacing: 1px;
+            font-size: 17px;
+            font-weight: 100;
+        }
+    }
+}
