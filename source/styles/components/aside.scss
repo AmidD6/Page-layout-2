@@ -54,6 +54,7 @@
                     margin-left: -10px;
                     font-size: 29px;
                     letter-spacing: 6px;
+                    font-family: $ff-nexa-regular;
                 }
 
                 &__titleText {
@@ -63,6 +64,7 @@
                     line-height: 65px;
                     margin-top: 23px;
                     margin-left: -10px;
+                    font-family: $ff-nexa-bold;
                 }
                 &__text {
                     font-size: 20px;
@@ -70,6 +72,7 @@
                     margin-top: 36px;
                     line-height: 35px;
                     opacity: .7;
+                    font-family: $ff-nexa-regular;
                 }
 
                 &__button {
@@ -86,7 +89,7 @@
                     border-style: none;
                     background: #ffc727;
                     font-size: 19px;
-                    font-weight: bold;
+                    font-family: $ff-nexa-bold;
                 }
             }
         }
@@ -138,6 +141,7 @@
                         font-size: 23px;
                         // opacity: .7;
                         color: #535273;
+                        font-family: $ff-nexa-bold;
                     }
                     &__text{
                         width: 85%;
@@ -147,6 +151,7 @@
                         line-height: 30px;
                         color: #4e4c6f;
                         letter-spacing: .1px;
+                        font-family: $ff-nexa-regular;
                     }
                 }
             }

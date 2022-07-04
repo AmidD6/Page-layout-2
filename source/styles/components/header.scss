@@ -46,6 +46,7 @@
                 padding-left: 68px;
                 font-size: 44px;
                 line-height: 78px;
+                font-family: $ff-nexa-bold;
             }
             &--text{
                 font-size: 20px;
@@ -54,6 +55,7 @@
                 line-height: 35px;
                 padding-left: 75px;
                 opacity: .7;
+                font-family: $ff-nexa-regular;
             }
             &--button {
                 width: 275px;
@@ -69,7 +71,8 @@
                 border-style: none;
                 background: #00dadc;
                 font-size: 19px;
-                font-weight: bold;
+                // font-weight: bold;
+                font-family: $ff-nexa-bold;
 }
          
         }

@@ -16,7 +16,7 @@
     &__page{
         display: flex;
         justify-content: center;
-        
+        border-style: dashed;
         // align-items: center;
         padding-top: 170px;
         width: $width-page;
@@ -46,6 +46,7 @@
                 text-transform: uppercase;
                 font-weight: 100;
                 line-height: 20px;
+                font-family: $ff-nexa-regular;
             }
             &__titleMain {
                 margin-top: 11px;
@@ -53,6 +54,7 @@
                 color: #fff;
                 font-size: 69px;
                 letter-spacing: -1px;
+                font-family: $ff-nexa-bold;
             }
             
             &__message {
@@ -85,6 +87,7 @@
                     text-align: center;
                     width: 80%;
                     font-size: 22px;
+                    font-family: $ff-nexa-regular;
                 }
                 &__commentator{
                     color: #6427de;
@@ -92,7 +95,7 @@
                     margin-right: 18px;
                     font-size: 23px;
                     letter-spacing: 1px;
-                    font-weight: 700;
+                    font-family: $ff-nexa-bold;
                 }
                 &__stars{
                     display: flex;

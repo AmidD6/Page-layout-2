@@ -46,6 +46,7 @@
             // left: 9px;
             color: #fff;
             font-size: 22px;
+            font-family: $ff-gilroy-bold;
         }
 
         &__links {
@@ -61,7 +62,7 @@
                 font-size: 19px;
                 text-decoration: none;
                 letter-spacing: 1px;
-
+                font-family: $ff-nexa-regular;
                 &:first-child {
                     margin-left: 0;
                 }
@@ -87,6 +88,15 @@
                 -moz-border-radius: 20.5px;
                 -ms-border-radius: 20.5px;
                 -o-border-radius: 20.5px;
+                transition: .2s;
+                cursor: pointer;
+                -webkit-transition: .2s;
+                -moz-transition: .2s;
+                -ms-transition: .2s;
+                -o-transition: .2s;
+                &:hover {
+                    background: #00dadc;
+                }
 
             }
         }
@@ -98,8 +108,9 @@
             margin-left: 20px;
             color: #fff;
             letter-spacing: 1px;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 100;
+            font-family: $ff-nexa-regular;
         }
     }
 }
