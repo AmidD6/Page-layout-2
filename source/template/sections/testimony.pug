@@ -1,23 +1,24 @@
 .testimony
     .testimony__page
+        - var numberPerson = [1, 2, 3, 4, 5, 6]
+        each item in numberPerson
+            img(src="./images/Person-" + item + ".png", alt="Person", srcset="")
     .testimony__page__container
         h6.testimony__page__container__title Testimonials
         h1.testimony__page__container__titleMain What people say
         .testimony__page__container__message
             img(src="images/quotes.png", alt="", srcset="")
-            p.testimony__page__container__message__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores assumenda temporibus voluptatum ea perferendis necessitatibus.
-            span.testimony__page__container__message__commentator Zoltan Nemeth
+            p.testimony__page__container__message__text#container__message
+            span.testimony__page__container__message__commentator#container__name
             .testimony__page__container__message__stars
-                i.fa-solid.fa-star
-                i.fa-solid.fa-star
-                i.fa-solid.fa-star
-                i.fa-solid.fa-star
-                i.fa-solid.fa-star
+                i#container__stars
+                i#container__stars
+                i#container__stars
+                i#container__stars
+                i#container__stars
             .testimony__page__container__message__buttons
-                button.testimony__page__container__message__buttons__back.deactive.fa-solid.fa-arrow-left-long
-                button.testimony__page__container__message__buttons__next.active.fa-solid.fa-arrow-right-long
+                button.testimony__page__container__message__buttons__back.fa-solid.fa-arrow-left-long
+                button.testimony__page__container__message__buttons__next.fa-solid.fa-arrow-right-long
         .testimony__page__container__message__opacity--start
-        .testimony__page__container__message__opacity--end  
-
-
+        .testimony__page__container__message__opacity--end
     .testimony__circle__yellow

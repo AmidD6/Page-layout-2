@@ -4,6 +4,10 @@ const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 const rimraf = require('rimraf');
+const ts = require('gulp-typescript');
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps')
 
 gulp.task('server', function() {
     browserSync.init({
@@ -42,6 +46,23 @@ gulp.task('copy:fonts', function() {
     .pipe(gulp.dest('public/fonts'));
 });
 
+
+gulp.task('scripts', function () {
+  return gulp.src([
+    'source/ts/comment.ts',
+    'source/ts/form.ts',
+    'source/ts/navigation.ts'
+  ]).pipe(ts({
+          noImplicitAny: true,
+          outFile: 'main.min.js'
+      }))
+      .pipe(sourcemaps.init())
+      .pipe(concat('main.min.js'))
+      .pipe(uglify())
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest('public/js'));
+});
+
   gulp.task('clean', function del(cb) {
     return rimraf('public', cb);
   });
@@ -51,12 +72,12 @@ gulp.task('copy:fonts', function() {
   gulp.task('watch', function() {
     gulp.watch('source/template/**/*.pug', gulp.series('templates:compile'));
     gulp.watch('source/styles/**/*.scss', gulp.series('styles:compile'));
-    // gulp.watch('source/js/**/*.js', gulp.series('js'));
+    gulp.watch('source/ts/**/*.ts', gulp.series('scripts'));
   });
 
   gulp.task('default', gulp.series(
     'clean',
-    gulp.parallel('templates:compile', 'styles:compile', 'copy'),
+    gulp.parallel('templates:compile', 'styles:compile', 'copy', 'scripts'),
     gulp.parallel('watch', 'server')
     )
   );

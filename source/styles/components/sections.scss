@@ -67,6 +67,14 @@
                     background: #ffc727;
                     font-size: 19px;
                     font-family: $ff-nexa-bold;
+                    &:hover {
+                        transition: .2s;
+                        background: #ffbb00;
+                        -webkit-transition: .2s;
+                        -moz-transition: .2s;
+                        -ms-transition: .2s;
+                        -o-transition: .2s;
+                    }
                 }
             }
         }
